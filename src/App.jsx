@@ -83,7 +83,7 @@ const App = () => {
         <Header />
         <Routes>
           {/* Public routes */}
-          <Route path='/' element={<Homepage />} />
+          <Route path='/signbrige' element={<Homepage />} />
      
           
           {/* Public routes that redirect to dashboard if user is logged in */}
@@ -131,3 +131,4 @@ const App = () => {
 
 
 export default App
+

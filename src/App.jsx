@@ -28,7 +28,7 @@ const ProtectedRoute = ({ children, isAuthenticated, isLoading }) => {
     return <LoadingSpinner />;
   }
   
-  return isAuthenticated ? children : <Navigate to="/login" replace />;
+  return isAuthenticated ? children : <Navigate to="/signbrige/login" replace />;
 };
 
 // Public Route component (redirect to dashboard if already logged in)
@@ -83,7 +83,7 @@ const App = () => {
         <Header />
         <Routes>
           {/* Public routes */}
-          <Route path='/signbrige' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
      
           
           {/* Public routes that redirect to dashboard if user is logged in */}
@@ -128,5 +128,6 @@ const App = () => {
     </>
   )
 }
+
 
 export default App

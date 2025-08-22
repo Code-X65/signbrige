@@ -210,7 +210,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           
           {/* Logo */}
-          <a href='/'>
+          <a href='/signbrige'>
           <div className="flex items-center">
             <img src="/logo.png" alt="Logo" className="h-10 md:h-12" />
             <span className="ml-2 text-xs md:text-sm font-bold text-primary dark:text-white">
@@ -484,5 +484,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
